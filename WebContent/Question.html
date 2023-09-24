@@ -1,0 +1,146 @@
+<html>
+<head>
+<link href="css/question.css" type="text/css" rel="stylesheet" />
+<title>Assignment (teaching.codes)</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>
+					Question: <br><br>
+					<code>Poker</code>
+				</h1>
+				<div>
+					Please read <a href="ReadMe.html">important information</a> first.
+				</div>
+				<div id="page1">
+					<h2>Description</h2>
+					<p>
+						There are <b>52</b> cards in a deck, <b>13</b> from each suit (<b>D</b>iamonds, <b>C</b>lubs, <b>H</b>earts, <b>S</b>pades).<br>
+						The cards are valued in the order: <b>2</b>, <b>3</b>, <b>4</b>, <b>5</b>, <b>6</b>, <b>7</b>, <b>8</b>, <b>9</b>, 10 (<b>T</b>), <b>J</b>ack, <b>Q</b>ueen, <b>K</b>ing, <b>A</b>ce.<br>
+						Cards are represented as their suit and their value combination. Ex : <b>AH</b> = <b>A</b>ce of <b>H</b>earts, <b>8C</b> = <b>8</b> of <b>C</b>lubs ...<br>
+						In the card game poker, a hand consists of five cards and are ranked, from highest to lowest, in the following way:
+						<br><br>
+						&#8195;<b>10 - Royal Flush</b>: Ten, Jack, Queen, King, Ace, in same suit. It is special case of Straight Flush (Example. AH JH KH QH TH)<br>
+						&#8195;<b>9 - Straight Flush</b>: All cards are consecutive values of same suit. (Example. 8C 4C 6C 5C 7C)<br>
+						&#8195;<b>8 - Four of a Kind</b>: Four cards of the same value. (Example. 4S 4D 5D 4C 4H)<br>
+						&#8195;<b>7 - Full House</b>: Three of a kind and a pair. (Example. 7H AH AC 7S AD)<br>
+						&#8195;<b>6 - Flush</b>: All cards of the same suit. (Example. KD 6D 8D JD TD)<br>
+						&#8195;<b>5 - Straight</b>: All cards are consecutive values. (Example. JC TS 7S 8S 9D)<br>
+						&#8195;<b>4 - Three of a Kind</b>: Three cards of the same value. (Example. 9S TC TS 6H TH)<br>
+						&#8195;<b>3 - Two Pairs</b>: Two different pairs. (Example. 5C AD 5D AC 9C)<br>
+						&#8195;<b>2 - Pair</b>: Two cards of the same value. (Example. 9H 4D JC KS JS)<br>
+						&#8195;<b>1 - High Card</b>: None of the above. (Example. 7C 5H KC QH JD)<br>
+						<br>
+					
+					
+						For given hands of poker, you are expected to print the highest ranked category they fall into.<br>
+						
+						You should read the hands from a file. This file's handler is stored in the <b>file</b> variable.<br>
+						
+						First value in the file is the number of hands, which is stored in <b>number_of_hands</b> variable.<br>
+						
+						Remaining rows contains the cards for each hand, split by a space.<br>
+						
+						
+						To output the ranked category, use the provided "<b>print_result</b>" function.
+						This function takes the rank of the category (Ex : 6 for Flush) and prints it's name.
+					
+					
+					
+
+					</p>
+					<p>
+
+					</p>
+					<p>
+
+					</p>
+					<p>
+						<b>Warning:</b> You are not allowed to use any imports.<br>
+					</p><br>
+
+					<h2>Examples:</h2>
+					<table>
+						<tr class="header">
+							<td>File Data (poker.txt)</td>
+						</tr>
+						<tr>
+							<td style = "white-space: nowrap">
+							26<br>
+							8C TS KC 9H 4S<br>
+							7D 2S 5D 3S AC<br>
+							5C AD 5D AC 9C<br>
+							7C 5H 8D TD KS<br>
+							3H 7H 6S KC JS<br>
+							QH TD JC 2D 8S<br>
+							TH 8H 5C QS TC<br>
+							9H 4D JC KS JS<br>
+							7C 5H KC QH JD<br>
+							AS KH 4C AD 4S<br>
+							5H KS 9C 7D 9H<br>
+							8D 3S 5D 5C AH<br>
+							6H 4H 5C 3H 2H<br>
+							3S QH 5S 6S AS<br>
+							TD 8C 4H 7C TC<br>
+							KC 4C 3H 7S KS<br>
+							7C 9C 6D KD 3H<br>
+							4C QS QC AC KH<br>
+							JC 6S 5H 2H 2D<br>
+							KD 9D 7C AS JS<br>
+							AD QH TH 9D 8H<br>
+							TS 6D 3S AS AC<br>
+							2H 4S 5C 5S TC<br>
+							KC JD 6C TS 3C<br>
+							AH JH KH QH TH<br>
+							4S 4D 5D 4C 4H
+						</tr>
+					</table><br>
+					
+					
+					<table>
+						<tr class="header">
+							<td>INPUTS</td>
+							<td>OUTPUTS</td>
+						</tr>
+						<tr>
+							<td style = "white-space: nowrap">
+							poker.txt
+							</td>
+							<td style = "white-space: nowrap">
+							High Card<br>
+							High Card<br>
+							Two Pairs<br>
+							High Card<br>
+							High Card<br>
+							High Card<br>
+							Pair<br>
+							Pair<br>
+							High Card<br>
+							Two Pairs<br>
+							Pair<br>
+							Pair<br>
+							Straight<br>
+							High Card<br>
+							Pair<br>
+							Pair<br>
+							High Card<br>
+							Pair<br>
+							Pair<br>
+							High Card<br>
+							High Card<br>
+							Pair<br>
+							Pair<br>
+							High Card<br>
+							Royal Flush<br>
+							Four of a Kind
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
